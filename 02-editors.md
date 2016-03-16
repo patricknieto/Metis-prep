@@ -59,7 +59,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I will begin using nano as my terminal editor because it was the first one I learned and started with. It is simple and fairly easy. It seems a lot easier than vim
 
 --
 
@@ -67,6 +67,6 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I will begin using Sublime text editor because it was introduced to me fairly early on in my career. I have become very familiar with sublime because of how flexible it is. Syntax can be set to almost any kind of programming language. F11 will be very usefull when writing code free from distractions.
 
  
