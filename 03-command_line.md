@@ -51,13 +51,14 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
  > 3. `ls *` gives you a good idea about the contents of each directory. It even displays with a nice colon.
  > 4. `ls -S` can detect which files are the largest and sort according to size.
  > 5. `ls ~` list my home directory from any working directory.
+ 
 --- 
 
 ###Q4.  Xargs   
 
 What does `xargs` do? Give an example of how to use it.
 
-> > xargs, to me, seems like a pretty advanced unix command and somewhat confusing. But it appears that i
+> 
 
  
 
