@@ -40,6 +40,7 @@ What do the following commands do:
  > 6. `ls -lah`  lists long format, includes hidden files and readable file sizes
  > 7. `ls -t` lists contents sorted by time and date
  > 8. `ls -Glp` lists long format directories with "/" appended to the end and without user group names
+ 
 ---
 
 ###Q3.  More List Files in Unix  
