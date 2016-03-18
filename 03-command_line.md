@@ -16,7 +16,12 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
  > 1. `ls -a` This is a very helpful command as one might need to find hidden files.
  > 2. `pushd` will be very useful to move between directories quickly
  > 3. `rm -rf` a dangerous yet useful command when trying to remove the contents of a directory
- > 4. ...
+ > 4. `mv` this will move a file from one place to another but it will also rename it, careful!
+ > 5. `$|$` pipe can allow you to take output and apply it to a new command. Can come in handy with more than one file.
+ > 6. `*` Matches anything in a wilcard like *.txt. This would help 
+ > 7. `grep` this will allow you to search through files based on a string
+ > 8. `apropos` finds potentially relavent help if you forget a commend
+ > 9. 
 
 
 ---
