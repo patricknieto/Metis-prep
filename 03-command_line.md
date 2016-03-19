@@ -21,7 +21,8 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
  > 6. `*` Matches anything in a wilcard like *.txt. This would help 
  > 7. `grep` this will allow you to search through files based on a string
  > 8. `apropos` finds potentially relavent help if you forget a commend
- > 9. 
+ > 9. `xargs` reads and executes commands from standard input one or more times
+ > 10. `find` - search for files in a directory hierarchy
 
 
 ---
@@ -64,7 +65,8 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> 
+> With `xargs` you are able to read standard input and execute commands based on the input; expects the input from stdin, and executes /bin/echo command over the input.
+> `$ find . -name "*.txt" | xargs rm -rf
 
  
 
