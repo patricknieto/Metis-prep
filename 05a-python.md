@@ -62,7 +62,35 @@ sorted(my_list, key=lambda my_list: my_list[-1])
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions simplify your code by allowing you to skip the for loop and start creating lists, dicts, and sets straight from your iterables. It also allows you to create the equivalents of `map` and `filter` in a more pythonic way of programming.
+
+#####Map
+```
+items = [1, 2, 3, 4, 5]
+list(map((lambda x: x**2), items))
+[1, 4, 9, 16, 25]
+```
+-list comprehension
+```
+S = [x**2 for x in items] 
+```
+#####Filter
+```
+list(flter((lambda x: x<3), items))
+[1,2]
+```
+-list comprehension
+```
+V = [x for x in items if x<3]
+```
+
+>> Capabilities for both methonds are very similar and the final results are the same, however, the list comprehensions provide you with an easier route.
+
+#####Set comprehension
+
+
+#####Dictionary comprehension
+
 
 ---
 
