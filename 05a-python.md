@@ -22,18 +22,18 @@ How are Python lists and tuples similar and different? Which will work as keys i
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
 >> The only way lists and sets are similar is that they are both mutable, meaning they can be modified. They can also be iterated through. What makes them different is that sets cannot be indexed, are unordered, there cannot be duplicates and can be manipulated using mathematical operations. 
-
-`my_set = set(['one', 'two'])`
-`other_set = set(['two','three'])`
-`my_set.update(other_set)`
-`my_set`
+```
+my_set = set(['one', 'two'])
+other_set = set(['two','three'])
+my_set.update(other_set)
+my_set
 {'one','three','two'}
 
-`my_list = ('one','two')`
-`other_list = ('two','three')`
-`my_list + other_list`
+my_list = ('one','two')
+other_list = ('two','three')
+my_list + other_list
 ('one','two','two','three')
-
+```
 >> sets are the preferred alternative to performing computational operations or determining duplicates or matches. They might not, however, perform better when iterating. Lists are simplified.
 
 ---
@@ -42,8 +42,15 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Put simply, Lambda is an in-line function. It acomplishes the same thing as a `def` would, but it is just simplified in order to save time and space. They are a matter of style. 
+```
+my_list = ['dog', 'cat', 'bird', 'ant']
+sorted(my_list)
+['ant','bird','cat','dog']
 
+sorted(my_list, key=lambda my_list: my_list[-1])
+['bird', 'dog', 'cat', 'ant']
+```
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
