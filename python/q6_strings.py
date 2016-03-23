@@ -18,7 +18,9 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+...     if count >=10:
+...             count = 'many'
+...     return 'Number of donuts: {}'.format(count)
 
 
 def both_ends(s):
@@ -37,7 +39,10 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    
+    if len(s) < 2:
+        return ''
+    return s[:2] + s[-2:]
 
 
 def fix_start(s):
@@ -56,7 +61,9 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    def fix_start(s):
+        first = s[:1]
+        return first + s[1:].replace(first, '*')
 
 
 def mix_up(a, b):
@@ -74,7 +81,8 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    def mix_up(a, b):
+        print (b[:1] + a[1:] + " " + a[:1] + b[1:])
 
 
 def verbing(s):
@@ -91,7 +99,13 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    def verbing(s):
+        if 'ing' in s:
+            print(s + 'ly')
+        elif len(s) > 2:
+            print(s + 'ing')
+        else:
+            print(s)
 
 
 def not_bad(s):
@@ -111,9 +125,13 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    def not_bad(s):
+        if 'not' in s:
+            if s.index('not') < s.index('bad'):
+                return s[:s.index('not')] + 'good'
+        print (s)
 
-
+import math
 def front_back(a, b):
     """
     Consider dividing a string into two halves. If the length is even,
@@ -130,4 +148,5 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    a, b, c, d = a[:math.ceil(len(a)/2)], a[math.ceil(len(a)/2):], b[:math.ceil(len(b)/2)], b[math.ceil(len(b)/2):]
+    print (a + c + " " + b + d)
