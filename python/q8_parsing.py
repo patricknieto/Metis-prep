@@ -6,14 +6,11 @@
 
 # The below skeleton is optional.  You can use it or you can write the script with an approach of your choice.
 
+import pandas as pd
 
-import csv
 
-  def read_data(data):
-   # COMPLETE THIS FUNCTION
+df = pd.read_csv("football.csv")
 
-  def get_min_score_difference(self, parsed_data):
-    # COMPLETE THIS FUNCTION
+df['Goal_Differential'] = df.Goals - df['Goals Allowed']
 
-  def get_team(self, index_value, parsed_data):
-    # COMPLETE THIS FUNCTION
+print(df.ix[df.Goal_Differential.argmin()].Team)
