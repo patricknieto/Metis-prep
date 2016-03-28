@@ -4,9 +4,9 @@
 
 import pandas as pd
 from collections import defaultdict
+import csv
 
-
-# In[36]:
+#Q1. Find how many different degrees there are, and their frequencies: Ex: PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
 #before reading in the data, we need to make sure there are no whitespaces
 #leading or trailing the text. 
@@ -57,7 +57,27 @@ freqs = pd.DataFrame.from_dict(degree_count, orient='index')
 freqs
 
 
-# In[ ]:
+# Q2. Find how many different titles there are, and their frequencies: Ex: Assistant Professor, Professor
 
+
+data.title.values[24] = data.title.values[24].replace(' is ', ' of ')
+data.title.value_counts()
+
+
+#Q3. Search for email addresses and put them in a list. Print the list of email addresses.
+
+email_list = list(data.email.values)
+
+#Q4. Find how many different email domains there are (Ex: mail.med.upenn.edu, upenn.edu, email.chop.edu, etc.). Print the list of unique email domains.
+
+new_list = []
+domains = []
+for item in email_list:
+    new_list.append(item.split('@'))
+    
+for item in new_list:
+    domains.append(item[1])
+
+set(domains)
 
 
