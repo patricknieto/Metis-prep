@@ -13,4 +13,4 @@ df = pd.read_csv("football.csv")
 
 df['Goal_Differential'] = df.Goals - df['Goals Allowed']
 
-print("Team with the worst goal differential is " + str(df.ix[df.Goal_Differential.argmin()].Team) )
+print("Team with the worst goal differential is " + str(df.ix[df.Goal_Differential.argmin()].Team) + " with " + str )
